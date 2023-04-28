@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body{
+    background-image: url('https://img.freepik.com/premium-photo/colored-pencils-sheet-notes-lie-blue-background-top-view-background-todo-list-back-school_230115-2400.jpg?w=2000');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.cont{
+    margin: 40px auto;
+}
+
+#form{
+    margin-left: 10vh;
+}
+
+#inp{
+    margin: 20px;
+    width: 500px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+}
+
+#inp:focus{
+    box-shadow: 0px 0px 5px black;
+}
+
+
+li{
+    list-style-type: none;
+    background: lightgoldenrodyellow;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+}
+
+#edit:link , #del:link{
+    color: black;
+}
+
+#edit:visited , #del:visited{
+    color: black;
+}
+
+#edit:active , #del:active{
+    color: black;
+}
+
+#msg , #added , #edited{
+    position: absolute;
+    background-color: lightcoral;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    margin-left: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+#msg , #added , #edited{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+}
+
+li > div{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    border: 1px solid black;
+}
+
+.fa-check{
+    color: black;
+    font-weight: 800;
+}
+
+#alerts{
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 5;
+    left: 40%;
+    top: 15%;
+    display: none;
+}
+
+#todo-no{
+    border: 3px solid blueviolet;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    min-width: 25%;
+}
+
+#image{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    display: none;
+}
+
+#image:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1035px){
+    body{
+        height: 100vh;
+    }
+}
+
+
+
+@media screen and (max-width: 730px) {
+    #form{
+        margin-left: 0vh;
+    }
+    #inp{
+        width: 200px;
+    }
+}
