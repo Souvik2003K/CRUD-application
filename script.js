@@ -60,7 +60,7 @@ function display(){
                         <i class="fa-solid fa-pen-to-square"></i>
                     </a>
                     &nbsp;&nbsp;
-                    <a href="javascript:void(0)" onclick="done(${i})" id="done">
+                    <a href="javascript:void(0)" ondblclick="undone(${i})" onclick="done(${i})" id="done">
                         <i class="fa-solid fa-check"></i>
                     </a>
                     &nbsp;&nbsp;
@@ -72,7 +72,6 @@ function display(){
         }
     }
     document.getElementById('main').innerHTML=html;
-    
 }
 
 function editData(k){
@@ -97,6 +96,12 @@ function done(k){
     let txt = document.getElementById(box);
     txt.style.textDecoration = 'line-through';
 }
+function undone(k){
+    let box ="box" + k;
+    let txt = document.getElementById(box);
+    txt.style.textDecoration = 'none';
+}
+
 
 function del(){
     document.getElementById('msg').style.display = "inline-block";
